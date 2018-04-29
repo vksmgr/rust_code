@@ -1,0 +1,13 @@
+[package]
+name = "g_a"
+version = "0.1.0"
+authors = ["vikas <vikas@0bit.in>"]
+
+[lib]
+name = "my_lib"
+path = "src/my_lib/lib.rs"
+
+[[bin]]
+name = "g_a"
+path = "src/main.rs"
+[dependencies]

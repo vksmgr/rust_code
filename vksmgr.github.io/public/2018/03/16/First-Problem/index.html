@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  
+  
+  
+  
+    
+  
+      <title>First Problem - AlgoRust</title>
+  
+  
+  <meta name="description" content="">
+  <meta name="author" content="Vikas M">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load scheme css -->
+  <link rel="stylesheet" href="/css/lightgallery.css">
+  
+
+
+
+
+
+    <link rel="stylesheet" href="/css/taurus.css">
+    
+        <link rel="stylesheet" href="/css/scheme-taurus/animations.css">
+    
+
+
+  <!-- load font awesome 5 -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/social-share.min.js"></script>
+    <script src="/js/theme.js"></script>
+
+  <!-- include cookie.js -->
+  
+  
+
+  <!-- include comment system code -->
+  
+    <link rel="stylesheet" href="/css/gitment/default.css">
+<script src="/js/gitment.browser.js"></script>
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+ 
+
+<header id="header">
+	<div class="header-title">
+		
+		<div class='header-logo'>
+			<a href='/'>
+				<img src='/images/me.jpg' />
+			</a>
+		</div>
+		<div class='header-text'>
+			<h1>
+				<a href="/">AlgoRust</a>
+			</h1>
+			<subtitle>
+				learn algorithms with rust
+			</subtitle>
+		</div>
+		
+	</div>
+	<div id='header-nav'>
+		
+
+
+
+<nav id="nav">
+	
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name">
+				
+					<a class='nav-link' href="/resume/">
+						<span>Resume </span>
+					</a>
+				</div>
+			</div>
+		
+	
+	
+	<div class='nav-item' id='nav-item-toc'>
+		
+
+
+
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#First-Problem"><span class="toc-number">1.</span> <span class="toc-text">First Problem</span></a></li></ol>
+<div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
+    <img src="/images/icons/blue-line/toc.svg" alt="">
+</div>
+
+	</div>
+	
+	<div class='nav-item' id='nav-item-archive'>
+		
+				<div class='nav-icon'>
+				
+			<a href="/archives/" title='Archives'>
+			<img src="/images/icons/blue-line/archive.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class='nav-item' id='nav-item-search'>
+		
+		<div class='nav-icon'>
+		
+			<a href="/search/" title='Search'>
+			<img src="/images/icons/blue-line/search.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="nav-item" id='nav-item-more'>
+		<div class="nav-icon">
+				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
+				<img src="/images/icons/blue-line/menu.svg" alt="">
+				</a>
+		</div>
+		<div class="nav-more-menu">
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/resume/">
+							<span>Resume</span>
+						</a>
+					</div>
+			</div>
+		
+		
+		
+	</div>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div style="flex: 1;">
+      <style>
+    body {
+        background-color: white;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+<article class="article" id="/2018/03/16/First-Problem/" data-name='First Problem' data-version="">
+
+    <!-- Title -->
+    <div class='article-header'>
+         
+         <h1 class='article-title'>
+            <a href="/2018/03/16/First-Problem/">
+                First Problem
+            </a>
+        </h1>
+        <!-- TODO: support nested categories,display them nicely -->
+        
+    </div>
+    
+    <!-- Date and Author -->
+    <div class='article-meta'>
+    <ul>
+            <li><i class='fa fa-calendar'></i> Mar 16, 2018</li>
+            
+            <li><i class="fa fa-user"></i> Vikas M</li>
+            
+            <li><i class="fas fa-copyright"></i>
+            
+                
+                
+            
+            
+                <a href=https://creativecommons.org/licenses/by-nc-nd/4.0/>CC BY-NC-ND 4.0</a>
+            
+            </li>
+    </ul>
+    
+<div class="tags">
+	
+		
+			<label class='tag-1'><a href="/tags/Algorithms/">Algorithms</a></label>
+		
+	
+		
+			<label class='tag-2'><a href="/tags/HackerEarth/">Hackerearth</a></label>
+		
+	
+		
+			<label class='tag-3'><a href="/tags/Problems/">Problems</a></label>
+		
+	
+		
+			<label class='tag-4'><a href="/tags/Rust/">Rust</a></label>
+		
+	
+	</div>
+
+    </div>
+    <div class='article-cards'>
+        <!-- Author Card -->
+        <!---
+        <div class='Card-article Card-author'>
+            <div class='card-title'>
+                <h3></h3>
+            </div>
+            <div class='card-content'>
+                    <div class="author-meta">
+                            <div class='author-figure'>
+                                <img src="" alt="">
+                            </div>
+                            <div class='author-name'>
+                                Vikas M
+                            </div>
+                        </div>
+                        <div class="author-ai">
+                            <div class='author-intro'>
+                                <!-- TODO: auto generating author description -->
+                                <!-- 
+                            </div>
+                            <div class="author-articles">
+                                <!-- TODO: auto generating author articles -->
+                                <!-- <ul>
+                                    <li>Article 1</li>
+                                    <li>Article 2</li>
+                                    <li>Article 3</li>
+                                    <li>Article 4</li>
+                                    <li>Article 5</li>
+                                    <li>Article 6</li>
+                                </ul>
+                            </div>
+                        </div>
+            </div>
+            
+        </div> -->
+
+        <!-- Visit Card -->
+        <!-- <div class="Card-article Card-visit"> -->
+            <!-- <div class="card-title">
+  <h3>Post Visit</h3>
+</div>
+<div class="card-chart">
+  <div id='chart-post-visit'></div>
+</div> -->
+        <!-- </div> -->
+        
+        <!-- Auto Excerpt Card -->
+        <!-- <div class="Card-article Card-excerpt">
+            <div class="card-title">
+  <h3>Quick Read</h3>
+</div>
+<div class="card-text">
+  <p id='text-post-summary'>First ProblemLet’s start our first problem to solve. Problem
+
+Problem Statement: Monk just purchased an array A having N integers. Monk is very superstitious. He calls the array A Lucky if the frequency of the minimum element is odd, otherwise he considers it Unlucky. Help Monk in finding out if...</p>
+</div>
+        </div> -->
+    </div>
+    
+    <!-- Gallery -->
+    <!-- TODO: add a slider to gallery -->
+    
+
+    <!-- Content -->
+    <!-- TODO: support table of content -->
+    <div class="article-toc" id='article-toc'>
+        
+
+
+
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#First-Problem"><span class="toc-number">1.</span> <span class="toc-text">First Problem</span></a></li></ol>
+<div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
+    <img src="/images/icons/blue-line/toc.svg" alt="">
+</div>
+
+    </div>
+    <div class='article-content'>
+    <h1 id="First-Problem"><a href="#First-Problem" class="headerlink" title="First Problem"></a>First Problem</h1><p>Let’s start our first problem to solve. <a href="https://www.hackerearth.com/practice/data-structures/arrays/1-d/practice-problems/algorithm/monk-and-lucky-minimum-3/" target="_blank" rel="noopener">Problem</a></p>
+<blockquote>
+<p>Problem Statement: Monk just purchased an array A having N integers. Monk is very superstitious. He calls the array A Lucky if the frequency of the minimum element is odd, otherwise he considers it Unlucky. Help Monk in finding out if the array is Lucky or not.</p>
+</blockquote>
+<p>it’s very simple and straight forward problem.</p>
+<p>This problem we will solve in two step’s</p>
+<ul>
+<li>First : Finding min.</li>
+<li>second: Calculating Frequency.</li>
+</ul>
+<h3 id="Getting-User-Input"><a href="#Getting-User-Input" class="headerlink" title="Getting User Input:"></a>Getting User Input:</h3><p>Before that we need to get user input.</p>
+<p>Input:<br>First line consists of a single integer T denoting the number of test cases.<br>First line of each test case consists of a single integer N denoting the size of array A.<br>Second line of each test case consists of N space separated integers denoting the array A.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//getting input for problem.</span><br><span class="line">    let mut T: i32;</span><br><span class="line">    let mut N: i32;</span><br><span class="line">    let mut array:Vec&lt;i32&gt; = vec![];</span><br><span class="line"></span><br><span class="line">    T = readInt();</span><br><span class="line">    println!(&quot;T :&#123;&#125;&quot;,T);</span><br><span class="line">    N = readInt();</span><br><span class="line">    println!(&quot;N : &#123;&#125;&quot;,N);</span><br></pre></td></tr></table></figure>
+<p>code to get user input. Here is the readInt method code which<br>will get input as string from user and parse it into <i32></i32></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">fn readInt() -&gt; i32&#123;</span><br><span class="line">    let mut ip_txt = String::new();</span><br><span class="line">    io::stdin().read_line(&amp;mut ip_txt).expect(&quot;error while reading&quot;);</span><br><span class="line">    let trimed = ip_txt.trim();</span><br><span class="line"></span><br><span class="line">    match trimed.parse::&lt;i32&gt;() &#123;</span><br><span class="line">        Ok(value) =&gt; value,</span><br><span class="line">        Err(E) =&gt; 00000,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="First-Part"><a href="#First-Part" class="headerlink" title="First Part:"></a>First Part:</h3><p>Now first part of the program. Finding min. this we will do by using linear search.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//first part: Find Min:</span><br><span class="line"></span><br><span class="line">  let mut min = 999999999;</span><br><span class="line">  for index in 0..N &#123;</span><br><span class="line">      if min &gt; array[index]&#123;</span><br><span class="line">          min = array[index];</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Second-Part"><a href="#Second-Part" class="headerlink" title="Second Part:"></a>Second Part:</h3><p>Now the second part of the problem.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// Now second part is to find frequency of the min element.</span><br><span class="line">  let mut freq: usize = 0;</span><br><span class="line">  for index in 0..N &#123;</span><br><span class="line">      if min == array[index]&#123;</span><br><span class="line">          freq += 1;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  match freq%2 &#123;</span><br><span class="line">      0 =&gt; println!(&quot;Unlucky&quot;),</span><br><span class="line">      1 =&gt; println!(&quot;Lucky&quot;),</span><br><span class="line">      _ =&gt; print!(&quot;Error&quot;),</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>Source <a href="https://github.com/vksmgr" target="_blank" rel="noopener">code</a>; </p>
+
+    
+    </div>
+    
+    
+        
+</article>
+  </div>
+
+  
+
+<footer id='footer'>
+    <div class='footer-copyright'>
+        <div>
+            <p> Copyright by <a href="">Vikas M </a> @ 2018</p>
+        </div>
+    </div>
+    
+    <div class='footer-social'>
+        
+    </div>
+</footer>
+
+  <br>
+
+  <div id="footer-nav">
+		
+
+
+
+<nav id="nav">
+	
+	
+		
+			
+				
+			
+		
+		
+	
+	
+	<div class='nav-item' id='nav-item-toc'>
+		
+
+
+
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#First-Problem"><span class="toc-number">1.</span> <span class="toc-text">First Problem</span></a></li></ol>
+<div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
+    <img src="/images/icons/blue-line/toc.svg" alt="">
+</div>
+
+	</div>
+	
+	<div class='nav-item' id='nav-item-archive'>
+		
+				<div class='nav-icon'>
+				
+			<a href="/archives/" title='Archives'>
+			<img src="/images/icons/blue-line/archive.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class='nav-item' id='nav-item-search'>
+		
+		<div class='nav-icon'>
+		
+			<a href="/search/" title='Search'>
+			<img src="/images/icons/blue-line/search.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="nav-item" id='nav-item-more'>
+		<div class="nav-icon">
+				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
+				<img src="/images/icons/blue-line/menu.svg" alt="">
+				</a>
+		</div>
+		<div class="nav-more-menu">
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/resume/">
+							<span>Resume</span>
+						</a>
+					</div>
+			</div>
+		
+		
+		
+	</div>
+	</div>
+</nav>
+
+	</div>
+
+  
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="/js/lightgallery.min.js"></script>
+<script src="/js/lg-zoom.min.js"></script>
+<script type='text/javascript'>
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
+        $(".article-content img").each(function(){
+            console.log($(this).attr('src'))
+            $(this).attr('data-src', $(this).attr('src')).lightGallery({
+                selector: 'this'
+            })
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script src="/js/post.js"></script>
+
+<script data-no-instant type='text/javascript'>
+changeLayoutOnTouchScreen();
+
+
+var post = new Post('', '');
+        post.getCommentCount(window.location.pathname, function(count){
+            $('#article-comment-count').text(count);
+        });
+        post.addVisitRecord(window.location.pathname, userip);
+        post.getVisitCount(window.location.pathname, function(count){
+            $('#article-visit-count').text(count);
+        });
+post.updatePostVersion(window.location.pathname);
+
+
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

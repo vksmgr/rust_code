@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  
+  
+  
+  
+    
+  
+      <title>Setting Environment - AlgoRust</title>
+  
+  
+  <meta name="description" content="">
+  <meta name="author" content="Vikas M">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load scheme css -->
+  <link rel="stylesheet" href="/css/lightgallery.css">
+  
+
+
+
+
+
+    <link rel="stylesheet" href="/css/taurus.css">
+    
+        <link rel="stylesheet" href="/css/scheme-taurus/animations.css">
+    
+
+
+  <!-- load font awesome 5 -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/social-share.min.js"></script>
+    <script src="/js/theme.js"></script>
+
+  <!-- include cookie.js -->
+  
+  
+
+  <!-- include comment system code -->
+  
+    <link rel="stylesheet" href="/css/gitment/default.css">
+<script src="/js/gitment.browser.js"></script>
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+ 
+
+<header id="header">
+	<div class="header-title">
+		
+		<div class='header-logo'>
+			<a href='/'>
+				<img src='/images/me.jpg' />
+			</a>
+		</div>
+		<div class='header-text'>
+			<h1>
+				<a href="/">AlgoRust</a>
+			</h1>
+			<subtitle>
+				learn algorithms with rust
+			</subtitle>
+		</div>
+		
+	</div>
+	<div id='header-nav'>
+		
+
+
+
+<nav id="nav">
+	
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name">
+				
+					<a class='nav-link' href="/resume/">
+						<span>Resume </span>
+					</a>
+				</div>
+			</div>
+		
+	
+	
+	<div class='nav-item' id='nav-item-toc'>
+		
+
+
+
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Setting-Environment"><span class="toc-number">1.</span> <span class="toc-text">Setting Environment</span></a></li></ol>
+<div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
+    <img src="/images/icons/blue-line/toc.svg" alt="">
+</div>
+
+	</div>
+	
+	<div class='nav-item' id='nav-item-archive'>
+		
+				<div class='nav-icon'>
+				
+			<a href="/archives/" title='Archives'>
+			<img src="/images/icons/blue-line/archive.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class='nav-item' id='nav-item-search'>
+		
+		<div class='nav-icon'>
+		
+			<a href="/search/" title='Search'>
+			<img src="/images/icons/blue-line/search.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="nav-item" id='nav-item-more'>
+		<div class="nav-icon">
+				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
+				<img src="/images/icons/blue-line/menu.svg" alt="">
+				</a>
+		</div>
+		<div class="nav-more-menu">
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/resume/">
+							<span>Resume</span>
+						</a>
+					</div>
+			</div>
+		
+		
+		
+	</div>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div style="flex: 1;">
+      <style>
+    body {
+        background-color: white;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+<article class="article" id="/2018/03/13/Setting-Environment/" data-name='Setting Environment' data-version="">
+
+    <!-- Title -->
+    <div class='article-header'>
+         
+         <h1 class='article-title'>
+            <a href="/2018/03/13/Setting-Environment/">
+                Setting Environment
+            </a>
+        </h1>
+        <!-- TODO: support nested categories,display them nicely -->
+        
+    </div>
+    
+    <!-- Date and Author -->
+    <div class='article-meta'>
+    <ul>
+            <li><i class='fa fa-calendar'></i> Mar 13, 2018</li>
+            
+            <li><i class="fa fa-user"></i> Vikas M</li>
+            
+            <li><i class="fas fa-copyright"></i>
+            
+                
+                
+            
+            
+                <a href=https://creativecommons.org/licenses/by-nc-nd/4.0/>CC BY-NC-ND 4.0</a>
+            
+            </li>
+    </ul>
+    
+    </div>
+    <div class='article-cards'>
+        <!-- Author Card -->
+        <!---
+        <div class='Card-article Card-author'>
+            <div class='card-title'>
+                <h3></h3>
+            </div>
+            <div class='card-content'>
+                    <div class="author-meta">
+                            <div class='author-figure'>
+                                <img src="" alt="">
+                            </div>
+                            <div class='author-name'>
+                                Vikas M
+                            </div>
+                        </div>
+                        <div class="author-ai">
+                            <div class='author-intro'>
+                                <!-- TODO: auto generating author description -->
+                                <!-- 
+                            </div>
+                            <div class="author-articles">
+                                <!-- TODO: auto generating author articles -->
+                                <!-- <ul>
+                                    <li>Article 1</li>
+                                    <li>Article 2</li>
+                                    <li>Article 3</li>
+                                    <li>Article 4</li>
+                                    <li>Article 5</li>
+                                    <li>Article 6</li>
+                                </ul>
+                            </div>
+                        </div>
+            </div>
+            
+        </div> -->
+
+        <!-- Visit Card -->
+        <!-- <div class="Card-article Card-visit"> -->
+            <!-- <div class="card-title">
+  <h3>Post Visit</h3>
+</div>
+<div class="card-chart">
+  <div id='chart-post-visit'></div>
+</div> -->
+        <!-- </div> -->
+        
+        <!-- Auto Excerpt Card -->
+        <!-- <div class="Card-article Card-excerpt">
+            <div class="card-title">
+  <h3>Quick Read</h3>
+</div>
+<div class="card-text">
+  <p id='text-post-summary'>Setting Environmentwe are going to use [rust] (https://www.rust-lang.org/en-US/) language for solving algorithm problems.</p>
+</div>
+        </div> -->
+    </div>
+    
+    <!-- Gallery -->
+    <!-- TODO: add a slider to gallery -->
+    
+
+    <!-- Content -->
+    <!-- TODO: support table of content -->
+    <div class="article-toc" id='article-toc'>
+        
+
+
+
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Setting-Environment"><span class="toc-number">1.</span> <span class="toc-text">Setting Environment</span></a></li></ol>
+<div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
+    <img src="/images/icons/blue-line/toc.svg" alt="">
+</div>
+
+    </div>
+    <div class='article-content'>
+    <h1 id="Setting-Environment"><a href="#Setting-Environment" class="headerlink" title="Setting Environment"></a>Setting Environment</h1><p>we are going to use [rust] (<a href="https://www.rust-lang.org/en-US/" target="_blank" rel="noopener">https://www.rust-lang.org/en-US/</a>) language for solving algorithm problems. </p>
+
+    
+    </div>
+    
+    
+        
+</article>
+  </div>
+
+  
+
+<footer id='footer'>
+    <div class='footer-copyright'>
+        <div>
+            <p> Copyright by <a href="">Vikas M </a> @ 2018</p>
+        </div>
+    </div>
+    
+    <div class='footer-social'>
+        
+    </div>
+</footer>
+
+  <br>
+
+  <div id="footer-nav">
+		
+
+
+
+<nav id="nav">
+	
+	
+		
+			
+				
+			
+		
+		
+	
+	
+	<div class='nav-item' id='nav-item-toc'>
+		
+
+
+
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Setting-Environment"><span class="toc-number">1.</span> <span class="toc-text">Setting Environment</span></a></li></ol>
+<div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
+    <img src="/images/icons/blue-line/toc.svg" alt="">
+</div>
+
+	</div>
+	
+	<div class='nav-item' id='nav-item-archive'>
+		
+				<div class='nav-icon'>
+				
+			<a href="/archives/" title='Archives'>
+			<img src="/images/icons/blue-line/archive.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class='nav-item' id='nav-item-search'>
+		
+		<div class='nav-icon'>
+		
+			<a href="/search/" title='Search'>
+			<img src="/images/icons/blue-line/search.svg" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="nav-item" id='nav-item-more'>
+		<div class="nav-icon">
+				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
+				<img src="/images/icons/blue-line/menu.svg" alt="">
+				</a>
+		</div>
+		<div class="nav-more-menu">
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="/resume/">
+							<span>Resume</span>
+						</a>
+					</div>
+			</div>
+		
+		
+		
+	</div>
+	</div>
+</nav>
+
+	</div>
+
+  
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="/js/lightgallery.min.js"></script>
+<script src="/js/lg-zoom.min.js"></script>
+<script type='text/javascript'>
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
+        $(".article-content img").each(function(){
+            console.log($(this).attr('src'))
+            $(this).attr('data-src', $(this).attr('src')).lightGallery({
+                selector: 'this'
+            })
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script src="/js/post.js"></script>
+
+<script data-no-instant type='text/javascript'>
+changeLayoutOnTouchScreen();
+
+
+var post = new Post('', '');
+        post.getCommentCount(window.location.pathname, function(count){
+            $('#article-comment-count').text(count);
+        });
+        post.addVisitRecord(window.location.pathname, userip);
+        post.getVisitCount(window.location.pathname, function(count){
+            $('#article-visit-count').text(count);
+        });
+post.updatePostVersion(window.location.pathname);
+
+
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

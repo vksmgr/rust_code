@@ -1,0 +1,32 @@
+version: 2.0.6-beta
+url: 
+logo: /images/me.jpg
+slogan: Bazinga, theme cutie!
+# Configure navigation menu, provide a relative link and a path to icon (icon should better be square)
+
+# As long as the name matches the font awesome icon name, you can add even more social links
+# As the tip: the social link can be a QRCODE link
+
+global:
+  comment_system: gitment # disqus, valine, gitment
+  scheme: Taurus
+  icon_set: blue-line
+  use_animation: true
+
+post:
+  allow_share: true
+  allow_modification: false
+  allow_commercial: false
+  use_lightgallery: true
+  allow_comment: false
+  toc_level: 2
+menu:
+    Resume:
+        link: /resume/
+    
+    
+gitment:
+  owner: Vikas M
+  repo: https://github.com/vksmgr/vksmgr.github.io.git
+  client_id: 5226209bc6478f3d1388
+  client_secret: e7a59c16660b5a84d2641f894436b0655419f304
